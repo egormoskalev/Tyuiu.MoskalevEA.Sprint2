@@ -13,11 +13,11 @@ namespace Tyuiu.MoskalevEA.Sprint2.Task2.V15.Lib
                 {
                     res = true;
                 }
-                else if (x >= 3 && x <= 7 && y >= 4 && y <= 6)
+                else if (x >= 3 && x <= 9 && y >= 4 && y <= 6) 
                 {
                     res = true;
                 }
-                else if (x == 8 && y >= 4 && y <= 7)
+                else if (x >= 8 && x <= 9 && y >= 4 && y <= 7) 
                 {
                     res = true;
                 }
