@@ -8,7 +8,7 @@ namespace Tyuiu.MoskalevEA.Sprint2.Task4.V14.Lib
         {
             double res = (x * 3 < Math.Sqrt(y) + 20) 
                 ? Math.Pow(2+1/Math.Pow(x, 2), y) 
-                : (Math.Pow(y, 2) - Math.Cos(Math.Pow(x, 2)) + 10) / (Math.Pow(x, 2) - Math.Sin(Math.Pow(y, 2))+12);
+                : (y * y - Math.Cos(x)) / (x * x - Math.Sin(y));
 
             return Math.Round(res,3);
         }
