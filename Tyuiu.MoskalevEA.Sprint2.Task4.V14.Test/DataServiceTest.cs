@@ -9,7 +9,7 @@ namespace Tyuiu.MoskalevEA.Sprint2.Task4.V14.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            double x = 10;
+            double x = 9;
             double y = 4;
             double res = ds.Calculate(x,y);
             double wait = 1;
@@ -20,9 +20,9 @@ namespace Tyuiu.MoskalevEA.Sprint2.Task4.V14.Test
         {
             DataService ds = new DataService();
             double x = 2;
-            double y = 16;
+            double y = 9;
             double res = ds.Calculate(x,y);
-            double wait = 431440;
+            double wait = 431440,883;
             Assert.AreEqual(res, wait);
         }
     }
