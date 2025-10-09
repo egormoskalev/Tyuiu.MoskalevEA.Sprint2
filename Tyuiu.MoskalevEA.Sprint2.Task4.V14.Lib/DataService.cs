@@ -10,7 +10,7 @@ namespace Tyuiu.MoskalevEA.Sprint2.Task4.V14.Lib
                 ? Math.Pow(2+1/Math.Pow(x, 2), y) 
                 : (y * y - Math.Cos(x*x)+10) / (x * x - Math.Sin(y*y)+12);
 
-            return Math.Round(res,3);
+            return Math.Round(res,4);
         }
     }
 }
