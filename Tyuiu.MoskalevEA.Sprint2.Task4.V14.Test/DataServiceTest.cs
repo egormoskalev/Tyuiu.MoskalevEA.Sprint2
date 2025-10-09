@@ -12,7 +12,7 @@ namespace Tyuiu.MoskalevEA.Sprint2.Task4.V14.Test
             double x = 9;
             double y = 4;
             double res = ds.Calculate(x,y);
-            double wait = 1;
+            double wait = 0.272;
             Assert.AreEqual(res, wait);
         }
         [TestMethod]
@@ -22,7 +22,7 @@ namespace Tyuiu.MoskalevEA.Sprint2.Task4.V14.Test
             double x = 2;
             double y = 9;
             double res = ds.Calculate(x,y);
-            double wait = 431440,883;
+            double wait = 431440.883;
             Assert.AreEqual(res, wait);
         }
     }
