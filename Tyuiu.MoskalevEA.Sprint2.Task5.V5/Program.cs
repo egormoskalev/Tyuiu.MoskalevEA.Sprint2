@@ -44,7 +44,7 @@ namespace Tyuiu.MoskalevEA.Sprint2.Task5.V5
                 case 11:
                 case 12:
                 case 13:
-                    Console.WriteLine($"карта + {ds.FindCardValue(x)} больше карты + {ds.FindCardValue(x - 1)}, но меньше карты + {ds.FindCardValue(x + 1)}");
+                    Console.WriteLine($"карта {ds.FindCardValue(x)} больше карты {ds.FindCardValue(x - 1)}, но меньше карты {ds.FindCardValue(x + 1)}");
                     break;
                 case 14:
                     Console.WriteLine($"карта {ds.FindCardValue(x)} является самой большой по достоинству");
