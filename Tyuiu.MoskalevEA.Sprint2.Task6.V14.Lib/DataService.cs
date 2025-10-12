@@ -8,7 +8,7 @@ namespace Tyuiu.MoskalevEA.Sprint2.Task6.V14.Lib
         {
             int day = k;
             int week = d;
-            int dayofweek = (d + k - 2) % 7 + 1;
+            int dayofweek = (d + k - 1) % 7 ;
             switch (dayofweek)
             {
                 case 0: return "Понедельник";            
