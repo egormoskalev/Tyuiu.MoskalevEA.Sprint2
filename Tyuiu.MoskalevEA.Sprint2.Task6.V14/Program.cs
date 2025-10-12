@@ -27,7 +27,7 @@ namespace Tyuiu.MoskalevEA.Sprint2.Task6.V14
             }
             else
             {
-                result = "Этот день: " + ds.FindDayName(k,d = (d + k) % 7);
+                result = "Этот день: " + ds.FindDayName(k-1,d = (d + k) % 7);
             }
 
             Console.WriteLine("***************************************************************************");
