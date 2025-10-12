@@ -1,4 +1,5 @@
-﻿using Tyuiu.MoskalevEA.Sprint2.Task6.V14.Lib;
+﻿using System;
+using Tyuiu.MoskalevEA.Sprint2.Task6.V14.Lib;
 
 namespace Tyuiu.MoskalevEA.Sprint2.Task6.V14
 {
@@ -15,8 +16,8 @@ namespace Tyuiu.MoskalevEA.Sprint2.Task6.V14
             Console.Write("Введите номер дня: ");
             int k = Convert.ToInt32(Console.ReadLine());
 
-            
-            int d = 6;
+            Console.Write("Введите номер дня: ");
+            int d = Convert.ToInt32(Console.ReadLine());
 
             string result;
 
@@ -26,7 +27,7 @@ namespace Tyuiu.MoskalevEA.Sprint2.Task6.V14
             }
             else
             {
-                result = "Этот день: " + ds.FindDayName(k+d, d);
+                result = "Этот день: " + ds.FindDayName(k,d = (d + k) % 7);
             }
 
             Console.WriteLine("***************************************************************************");

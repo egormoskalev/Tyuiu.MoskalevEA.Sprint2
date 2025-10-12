@@ -8,16 +8,16 @@ namespace Tyuiu.MoskalevEA.Sprint2.Task6.V14.Lib
         {
             int day = k;
             int week = d;
-
-            switch (k % 7)
+            int dayofweek = (d + k - 2) % 7 + 1;
+            switch (dayofweek)
             {
-                case 1 % 7: return "Понедельник";            
-                case 2 % 7: return "Вторник";
-                case 3 % 7: return "Среда";
-                case 4 % 7: return "Четверг";
-                case 5 % 7: return "Пятница";
-                case 6 % 7: return "Суббота";
-                case 7 % 7: return "Воскресенье";
+                case 0: return "Понедельник";            
+                case 1: return "Вторник";
+                case 2: return "Среда";
+                case 3: return "Четверг";
+                case 4: return "Пятница";
+                case 5: return "Суббота";
+                case 6: return "Воскресенье";
                 default:
                     throw new ArgumentException($"день должнен быть от 1 до 7. Значение {d}");
             }     
