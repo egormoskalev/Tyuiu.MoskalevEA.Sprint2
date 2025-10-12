@@ -15,6 +15,9 @@ namespace Tyuiu.MoskalevEA.Sprint2.Task6.V14
             Console.Write("Введите номер дня: ");
             int k = Convert.ToInt32(Console.ReadLine());
 
+            
+            int d = 6;
+
             string result;
 
             if ((k <= 0)||(k >= 366))
@@ -23,7 +26,7 @@ namespace Tyuiu.MoskalevEA.Sprint2.Task6.V14
             }
             else
             {
-                result = "Этот день: " + ds.FindDayName(k, k);
+                result = "Этот день: " + ds.FindDayName(k+d, d);
             }
 
             Console.WriteLine("***************************************************************************");
