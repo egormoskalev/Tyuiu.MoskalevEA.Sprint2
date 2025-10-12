@@ -9,7 +9,7 @@ namespace Tyuiu.MoskalevEA.Sprint2.Task6.V14.Lib
             int day = d;
             int week = k;
 
-            switch (day % 7)
+            switch (d % 7)
             {
                 case 1 % 7: return "понедельник";            
                 case 2 % 7: return "вторник";
