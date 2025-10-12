@@ -13,17 +13,17 @@ namespace Tyuiu.MoskalevEA.Sprint2.Task6.V14
             Console.WriteLine("***************************************************************************");
 
             Console.Write("Введите номер дня: ");
-            int d = Convert.ToInt32(Console.ReadLine());
+            int k = Convert.ToInt32(Console.ReadLine());
 
             string result;
 
-            if ((d <= 0)||(d >= 366))
+            if ((k <= 0)||(k >= 366))
             {
                 result = "Введенно неверное значение!";
             }
             else
             {
-                result = "Этот день: " + ds.FindDayName(d, d);
+                result = "Этот день: " + ds.FindDayName(k, k);
             }
 
             Console.WriteLine("***************************************************************************");

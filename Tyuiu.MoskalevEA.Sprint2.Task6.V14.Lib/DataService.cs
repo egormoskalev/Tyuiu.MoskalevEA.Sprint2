@@ -6,10 +6,10 @@ namespace Tyuiu.MoskalevEA.Sprint2.Task6.V14.Lib
     {
         public string FindDayName(int k, int d)
         {
-            int day = d;
-            int week = k;
+            int day = k;
+            int week = d;
 
-            switch (d % 7)
+            switch (k % 7)
             {
                 case 1 % 7: return "Понедельник";            
                 case 2 % 7: return "Вторник";
